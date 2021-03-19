@@ -1,26 +1,26 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "Storeofapp Shopify Storefront | Powered by Next.js Commerce",
+  "titleTemplate": "%s - Storeofapp Shopify Storefront",
+  "description": "Storeofapp.com - https://storeofapp/nextjs",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Storeofapp Shopify Storefront | Powered by Next.js Commerce",
+    "description": "Storeofapp.com - https://storeofapp/nextjs",
     "type": "website",
     "locale": "en_IE",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://storeofapp/nextjs",
+    "site_name": "StoreOfApp",
     "images": [
       {
         "url": "/card.png",
         "width": 800,
         "height": 600,
-        "alt": "Next.js Commerce"
+        "alt": "Storeofapp NextJs Theme"
       }
     ]
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
+    "handle": "@storeofapp",
+    "site": "@storeofapp",
     "cardType": "summary_large_image"
   }
 }
