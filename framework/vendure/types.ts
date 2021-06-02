@@ -1,20 +1,39 @@
 import * as Core from '@commerce/types'
-import { CheckoutLineItem } from './schema'
 
-export type VendureCheckout = {
+// TODO: this type should match:
+// https://www.vendure.io/docs/graphql-api/shop/queries/#order
+export type VendureCart = {
   id: string
-  webUrl: string
-  lineItems: CheckoutLineItem[]
+  code?: string
+  customer: {
+    id: number
+    firstName: string
+    lastName: string
+    emailAddress: string
+  }
+  currencyCode: { code: string }
+  subTotal: number
+  subTotalWithTax: number
+  totalQuantity: number
+  lines: {
+    createdAt: string
+    productVariant: {
+      id: any
+      productId: any
+      sku: string
+      price: number
+    }
+  }[]
+  createdAt: string
+  discounts?: { adjustmentSource: string; amount: number, amountWithTax: number }[]
+  // TODO: add missing fields
 }
 
-export interface Cart extends Core.Cart {
-  id: string
+export type Cart = Core.Cart & {
   lineItems: LineItem[]
 }
 
-export interface LineItem extends Core.LineItem {
-  options: any[]
-}
+export type LineItem = Core.LineItem
 
 /**
  * Cart mutations
